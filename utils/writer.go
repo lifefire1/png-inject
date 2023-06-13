@@ -7,7 +7,8 @@ import (
 	"log"
 	"os"
 	"strconv"
-	"winGO/models"
+
+	"github.com/lifefire1/png-inject/models"
 )
 
 func WriteData(r *bytes.Reader, c *models.CmdLineOpts, b []byte) {

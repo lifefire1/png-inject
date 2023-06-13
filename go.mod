@@ -1,4 +1,4 @@
-module winGO
+module github.com/lifefire1/png-inject
 
 go 1.20
 

@@ -6,8 +6,8 @@ import (
 	"os"
 	"strconv"
 
-	"winGO/models"
-	pnglib "winGO/pngLib"
+	"github.com/lifefire1/png-inject/models"
+	pnglib "github.com/lifefire1/png-inject/pngLib"
 
 	"github.com/spf13/pflag"
 )

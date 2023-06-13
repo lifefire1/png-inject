@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	"winGO/models"
-	"winGO/utils"
+	"github.com/lifefire1/png-inject/models"
+	"github.com/lifefire1/png-inject/utils"
 )
 
 const (
