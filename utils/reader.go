@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func preProcessImage(dat *os.File) (*bytes.Reader, error) {
+func PreProcessImage(dat *os.File) (*bytes.Reader, error) {
 	stats, err := dat.Stat()
 	if err != nil {
 		log.Fatal(err)
@@ -15,11 +15,13 @@ func preProcessImage(dat *os.File) (*bytes.Reader, error) {
 
 	var size = stats.Size()
 	b := make([]byte, size)
+
 	bufR := bufio.NewReader(dat)
 	if _, err := bufR.Read(b); err != nil {
 		log.Fatal(err)
 	}
 
 	bReader := bytes.NewReader(b)
+
 	return bReader, err
 }

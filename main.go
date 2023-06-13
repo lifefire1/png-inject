@@ -8,7 +8,7 @@ import (
 
 	"github.com/lifefire1/png-inject/models"
 	pnglib "github.com/lifefire1/png-inject/pngLib"
-
+	"github.com/lifefire1/png-inject/utils"
 	"github.com/spf13/pflag"
 )
 
@@ -77,7 +77,7 @@ func usage() {
 func main() {
 	dat, err := os.Open(opts.Input)
 	defer dat.Close()
-	bReader, err := utilites.
+	bReader, err := utils.PreProcessImage(dat)
 	if err != nil {
 		log.Fatal(err)
 	}
